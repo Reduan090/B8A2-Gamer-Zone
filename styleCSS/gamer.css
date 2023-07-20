@@ -65,6 +65,111 @@ nav li a {
     gap: 1rem;
 }
 
+/***********Banner section*************/
+.banner-section {
+    width: auto;
+    background-image: url('../images/Group\ 14.png');
+    background-repeat: no-repeat;
+    background-size: 50%;
+}
+
+.banner-container {
+    margin: 0 auto 0 auto;
+    width: 1366px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.banner-content {
+    width: 50%;
+    height: 700px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.banner-content-align {
+    margin: auto 0 auto 0;
+}
+
+.banner-title {
+    color: #0B0223;
+    font-size: 48px;
+    font-weight: 600;
+    margin: 0;
+    padding: 0;
+}
+
+.goat {
+    font-size: 95px;
+    font-weight: 800;
+    background: linear-gradient(180deg, #F948B2 10%, #8758F1 90%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin: 0;
+    padding: 0;
+}
+
+.bnr-features {
+    display: flex;
+    flex-direction: column;
+    max-width: 300px;
+    margin: 0 auto 40px auto;
+}
+
+.bnr-des {
+    padding-top: 10px;
+    display: flex;
+}
+
+.bnr-des-icn {
+    width: 20px;
+    height: 20px;
+}
+
+.bnr-des-text {
+    margin: auto 0 auto 10px;
+    text-align: left;
+}
+
+.hero-btns {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 20px;
+}
+
+.btn-one {
+    color: #FFF;
+    font-size: 20px;
+    font-weight: 600;
+    display: inline-flex;
+    padding: 21px 40px;
+    align-items: flex-start;
+    border-radius: 48px;
+    border: none;
+    background: #FF42A5;
+}
+
+.btn-two {
+    color: #FFF;
+    font-size: 20px;
+    font-weight: 600;
+    display: inline-flex;
+    padding: 21px 40px;
+    align-items: flex-start;
+    border: none;
+    border-radius: 48px;
+    background: #4EC5F7;
+}
+
+.image-container {
+    width: 50%;
+    justify-content: right;
+}
 
 
 /**************Online Games Funny Videos**************/
@@ -90,6 +195,200 @@ nav li a {
 }
 
 
+/****** Play games *******/
+
+.play-games {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin: 120px 0 0 0;
+    padding: 0 0 120px 0;
+}
+
+.play-games-title {
+    font-size: 2.8rem;
+    font-weight: 700;
+}
+
+.play-games-content {
+    text-align: right;
+}
+
+.play-games-des {
+    width: 340px;
+    color: #534C64;
+    font-size: 1rem;
+    font-weight: 400;
+}
+
+.play-games-img {
+    width: 634.833px;
+    height: 650px;
+}
+
+.horse-man-img {
+    width: 600px;
+    height: 616px;
+}
+
+.img-over {
+    width: 318.5px;
+    height: 365.083px;
+    position: relative;
+    bottom: 285px;
+    right: 160px;
+}
+
+
+/*****************Button section*********************/
+
+
+.button-row {
+    display: flex;
+    justify-content: space-around;
+    gap: 50px;
+}
+
+.button-img {
+    width: 60px;
+    height: 60px;
+}
+
+.button-title {
+    color: #0B0223;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+/*****************start of category*********************/
+
+.category {
+    display: flex;
+    align-content: center;
+    background: #fff9fc;
+    width: auto;
+    height: 420px;
+    margin: 0;
+    padding: 0;
+}
+
+.grid {
+    display: flex;
+    flex-wrap: wrap;
+    width: 1300px;
+    justify-content: center;
+    margin: auto;
+    gap: 20px;
+}
+
+.grid-content {
+    font-size: 20px;
+    max-width: 25%;
+    padding: 5px;
+    display: flex;
+    border: 1.5px solid transparent;
+    border-radius: 50px;
+    background: #FFF;
+}
+
+.grid-content:hover {
+    background: #FFF;
+    border: 1.5px solid #FF42A5;
+    width: auto;
+}
+
+.grid-content-img {
+    width: 60px;
+    height: 60px;
+}
+
+.grid-content-text {
+    margin: auto 0 auto 10px;
+    text-align: left;
+    text-decoration: none;
+    color: #000;
+    font-family: 'Work Sans', sans-serif;
+    font-weight: 600;
+}
+
+/*****************end of category*********************/
+
+/****************Footer*******************/
+
+.footer-container {
+    margin-top: 100px;
+    width: 100%;
+    height: 500px;
+    background: #0B0223;
+}
+
+.footer-head {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.links{
+ 
+}
+.links>ul {
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+    align-items: center;
+    gap: 60px;
+}
+
+.links li a {
+    text-decoration: none;
+    gap: 20px;
+    color: #FFF;
+    font-size: 1.1rem;
+    font-weight: 600;
+}
+
+.footer-title {
+    color: #FFF;
+    font-size: 2.8rem;
+    font-weight: 700;
+}
+
+
+.copy{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #FFF;
+    font-size: 16px;
+}
+
+.links2>ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    gap: 50px;
+}
+.links2 ul a{
+    text-decoration: none;
+    gap: 20px;
+    color: #FFF;
+    font: size 16px;
+    font-weight: 600;
+}
+
+.links1{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.links1 .links1-content{
+    gap: 40px;
+}
+
+
 /*******Responsive style********/
 
 /******** Mobile Device ********/
@@ -98,7 +397,8 @@ nav li a {
 
     .navbar,
     ul,
-    .funny-card-container {
+    .funny-card-container,
+    .play-games {
         flex-direction: column;
     }
 
@@ -107,18 +407,137 @@ nav li a {
         align-items: center;
     }
 
-    .funny-card-container{
+    .funny-card-container {
         padding-left: 70px;
     }
 
+    .button-container .button-row {
+        display: grid;
+        grid-template-rows: repeat(3, 1fr);
 
+    }
+
+    .image-container {
+        max-width: 40%;
+    }
+
+/**********************hero section*****************************/
+.banner-section {
+    max-width: 417px;
 }
 
+.banner-container {
+    width: 417px;
+    margin: 0 auto 0 auto;
+    display: flex;
+    flex-direction: column-reverse;
+    flex-wrap: wrap;
+    margin: 50px 0 0 0;
+}
+
+.banner-content {
+    background-image: url('../images/Group\ 14.png');
+    background-repeat: no-repeat;
+    background-size: 417px;
+    width: auto;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin: 50px 0 0 0;
+}
+
+.banner-content-align {
+    margin: auto 0 auto 0;
+}
+
+.image-container {
+    width: 417px;
+}
+
+.image-container img {
+    width: 417px;
+}
+
+/**************play games*****************/
+.play-games {
+    margin: 50px 0 0 0;
+    padding: 0;
+}
+
+.play-games-img {
+    width: 417px;
+    height: auto;
+}
+
+.horse-man-img {
+    display: block;
+    margin-left: auto;
+    width: 81.53%;
+    height: auto;
+    padding-top: 50px;
+}
+
+.img-over {
+    width: 40%;
+    height: 40%;
+    margin: 130px 0px 0px 170px;
+}
+
+/*****************start of category*********************/
+
+.category {
+    display: flex;
+    align-content: center;
+    background: #fff9fc;
+    width: auto;
+    height: 420px;
+    margin: 0;
+    padding: 0;
+}
+
+.grid {
+    display: flex;
+    flex-wrap: wrap;
+    width: 417px;
+    justify-content: center;
+    margin: auto;
+    gap: 10px;
+}
+
+.grid-content {
+    font-size: 10px;
+    max-width: 35%;
+    padding: 2px;
+    display: flex;
+    border: 1.5px solid transparent;
+    border-radius: 48px;
+    background: #FFF;
+    margin: 0 0 30px 0;
+}
+
+.grid-content-img {
+    width: 25px;
+    height: 25px;
+}
+
+.grid-content-text {
+    margin: auto 0 auto 5px;
+    text-align: left;
+    text-decoration: none;
+    color: #000;
+    font-family: 'Work Sans', sans-serif;
+    font-weight: 600;
+}
+
+}
 
 /******** Medium Device *********/
 
 @media screen and (min-width:576px) and (max-width:940px) {
-    nav {
+
+    nav,
+    .play-games {
         flex-direction: column;
     }
 
@@ -128,10 +547,12 @@ nav li a {
         padding: 0 0 50px 0;
     }
 
-    .funny-card-container{
+    .funny-card-container {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
         width: 50%;
         padding-left: 200px;
     }
+
+
 }
