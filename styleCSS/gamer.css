@@ -6,6 +6,7 @@
     font-family: 'Open Sans', sans-serif;
     font-family: 'Poppins', sans-serif;
     font-family: 'Work Sans', sans-serif;
+    outline: 1px solid red !important;
 }
 
 /*********** Header *********/
@@ -75,7 +76,7 @@ nav li a {
 
 .banner-container {
     margin: 0 auto 0 auto;
-    width: 1366px;
+    width: 1200px;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -214,17 +215,28 @@ nav li a {
 
 .funny-card-container .card-img {
     width: 280px;
+    border: 5px solid #fff;
+}
+
+.card-img:hover {
+    background-color: rgba(0, 0, 0, 0.05);
 }
 
 
 /****** Play games *******/
 
-.play-games {
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
+.play-games-container{
+    width: auto;
     margin: 120px 0 0 0;
     padding: 0 0 120px 0;
+}
+
+.play-games {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 1200px;
+    margin: 0 auto 0 auto;
 }
 
 .play-games-title {
@@ -338,7 +350,6 @@ nav li a {
 /****************Footer*******************/
 
 .footer-container {
-    margin-top: 100px;
     width: 100%;
     height: 500px;
     background: #0B0223;
@@ -352,15 +363,17 @@ nav li a {
 }
 
 
-.links>ul {
+.footer-menu>ul {
     display: flex;
     justify-content: center;
+    flex-wrap: wrap;
     padding: 10px;
     align-items: center;
-    gap: 60px;
+    gap: 30px;
+    list-style: none;
 }
 
-.links li a {
+.footer-menu li a {
     text-decoration: none;
     gap: 20px;
     color: #FFF;
@@ -381,36 +394,49 @@ nav li a {
     align-items: center;
     color: #FFF;
     font-size: 16px;
+    padding-bottom: 80px;
+    text-align: center;
 }
 
-.links2>ul {
+.footer-menu-2>ul {
     display: flex;
     justify-content: center;
-    align-items: center;
+    flex-wrap: wrap;
     padding: 10px;
-    gap: 50px;
+    align-items: center;
+    list-style: none;
+    gap: 30px;
 }
 
-.links2 ul a {
+.footer-menu-2 li a {
     text-decoration: none;
-    gap: 20px;
     color: #FFF;
-    font: size 16px;
+    font-size: 1.1rem;
     font-weight: 600;
+    font-size: 16px;
 }
 
 .links1 {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
+    width: auto;
 }
 
 .links1 .links1-content {
-    gap: 40px;
+    gap:30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto 50px auto;
+    width: 400px;
 }
 
+.social-link-footer img {
+    width: 30px;
+    height: 30px;
+}
 
-/*******Responsive style********/
+/************************************************************************
+Responsive style
+*************************************************************************/
 
 /******** Mobile Device ********/
 
@@ -418,8 +444,7 @@ nav li a {
 
     .navbar,
     ul,
-    .funny-card-container,
-    .play-games {
+    .funny-card-container {
         flex-direction: column;
     }
 
@@ -481,10 +506,17 @@ nav li a {
         width: 400px;
     }
 
-    /**************play games*****************/
+    /**************play games - mobile*****************/
+
+    .play-games-container{
+        width: auto;
+        margin: 120px 0 0 0;
+        padding: 0 0 120px 0;
+    }
 
     .play-games-content {
         align-items: center;
+        flex-direction: column;
     }
 
     .play-games-des {
@@ -499,8 +531,11 @@ nav li a {
     }
 
     .play-games {
+        width: 417px;
         margin: 50px 0 0 0;
         padding: 0;
+        display: flex;
+        flex-direction: column;
     }
 
     .play-games-img {
@@ -523,6 +558,14 @@ nav li a {
         position: relative;
         bottom: 260px;
         right: 160px;
+    }
+   
+
+    .no-install {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding-left: 10%;
     }
 
     /*****************start of category*********************/
@@ -577,34 +620,220 @@ nav li a {
     height: auto;
 }
 
-.links > ul{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 30px;
+.footer-menu {
+    width: auto;
 }
 
-/******** Medium Device *********/
+.footer-menu>ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 10px;
+    width: 75%;
+    margin: 0 auto 50px auto;
+}
+
+.footer-menu li a {
+    color: #FFF;
+    font-size: 1.1rem;
+    font-weight: 600;
+}
+
+.footer-menu-2 {
+    width: auto;
+}
+
+.footer-menu-2 > ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 10px;
+    width: 75%;
+    margin: 0 auto 50px auto;
+}
+
+.footer-menu-2 > li a {
+    gap: 20px;
+    color: #FFF;
+    font-size: 1.1rem;
+    font-weight: 600;
+}
+}
+
+/***************************************************************
+ TAblet Device
+ ***************************************************************/
 
 @media screen and (min-width:576px) and (max-width:940px) {
-
-    nav,
-    .play-games {
+    .navbar,
+    ul,
+    .funny-card-container
+    .banner-container
+    {
         flex-direction: column;
     }
 
-    nav ul {
-        justify-content: space-around;
+    ul {
         gap: 50px;
-        padding: 0 0 50px 0;
+        align-items: center;
     }
 
     .funny-card-container {
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        width: 50%;
-        padding-left: 200px;
+        padding-left: 70px;
     }
 
+    .button-container .button-row {
+        display: grid;
+        grid-template-rows: repeat(3, 1fr);
 
+    }
+
+    .image-container {
+        max-width: 40%;
+    }
+
+    /**********************hero section*****************************/
+    .banner-section {
+        max-width: 417px;
+    }
+
+    .banner-container {
+        width: 400px;
+        margin: 0 auto 0 auto;
+        display: flex;
+        flex-direction: column-reverse;
+        flex-wrap: wrap;
+        margin: 50px 0 0 0;
+    }
+
+    .banner-content {
+        background-image: url('../images/Group\ 14.png');
+        background-repeat: no-repeat;
+        background-size: 417px;
+        width: auto;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        margin: 50px 0 0 0;
+    }
+
+    .banner-content-align {
+        width: 400px;
+        margin: auto 0 auto 0;
+    }
+
+    .image-container {
+        width: 400px;
+    }
+
+    .image-container img {
+        width: 700px;
+        padding-left: 40px;
+    }
+
+    .banner-title{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 750px;
+    }
+
+    .bnr-features{
+        width: 500px;
+        padding-left: 250px;
+    }
+.goat{
+    width: 750px;
+}
+
+.hero-btns{
+    width: 750px;
+}
+/************************/
+
+    .funny-card-container{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }        
+
+    .play-games-content{
+        padding-left: 350px;
+    }
+
+    .play-games {
+        width: 417px;
+        margin: 50px 0 0 0;
+        padding: 0;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .play-games-img{
+        margin-top: 50px;
+        width: 500px;
+        padding-left: 450px;
+    }
+ .horse-man-img{
+    width: 500px;
+    height: 516px;
+ }
+
+    .img-over{
+        width: 218.5px;
+        height: 281px;
+        position: relative;
+        bottom: 285px;
+        right: 160px;
+    }
+
+    /************************************************/
+.footer-container{
+    height: auto;
+}
+
+.footer-menu {
+    width: auto;
+}
+
+.footer-menu>ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 10px;
+    width: 90%;
+    margin: 0 auto 50px auto;
+}
+
+.footer-menu li a {
+    color: #FFF;
+    font-size: 1.1rem;
+    font-weight: 600;
+}
+.links1 .links1-content {
+    gap: 55px;
+}
+.footer-menu-2 {
+    width: auto;
+}
+
+.footer-menu-2 > ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 10px;
+    width: 84%;
+    margin: 0 auto 50px auto;
+}
+
+.footer-menu-2 > li a {
+    gap: 20px;
+    color: #FFF;
+    font-size: 1.1rem;
+    font-weight: 600;
+}
+
+.copy{
+    font-size: 13px;
+}
 }
